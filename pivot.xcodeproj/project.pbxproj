@@ -15,6 +15,10 @@
 		DEF40A642880491300A82002 /* pivotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF40A632880491300A82002 /* pivotTests.swift */; };
 		DEF40A6E2880491300A82002 /* pivotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF40A6D2880491300A82002 /* pivotUITests.swift */; };
 		DEF40A702880491300A82002 /* pivotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF40A6F2880491300A82002 /* pivotUITestsLaunchTests.swift */; };
+		DEF40A7E288196AF00A82002 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = DEF40A7D288196AF00A82002 /* FocusEntity */; };
+		DEF40A852887248900A82002 /* surfaceShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = DEF40A842887248900A82002 /* surfaceShader.metal */; };
+		DEF40A892887524B00A82002 /* pointer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = DEF40A882887524B00A82002 /* pointer.usdz */; };
+		DEF40A8D288AA65700A82002 /* randomEncouragement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF40A8C288AA65700A82002 /* randomEncouragement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,9 @@
 		DEF40A692880491300A82002 /* pivotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pivotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF40A6D2880491300A82002 /* pivotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pivotUITests.swift; sourceTree = "<group>"; };
 		DEF40A6F2880491300A82002 /* pivotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pivotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEF40A842887248900A82002 /* surfaceShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = surfaceShader.metal; sourceTree = "<group>"; };
+		DEF40A882887524B00A82002 /* pointer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pointer.usdz; path = ../../../Downloads/pointer.usdz; sourceTree = "<group>"; };
+		DEF40A8C288AA65700A82002 /* randomEncouragement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomEncouragement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF40A7E288196AF00A82002 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,10 +104,13 @@
 		DEF40A4F2880490F00A82002 /* pivot */ = {
 			isa = PBXGroup;
 			children = (
+				DEF40A882887524B00A82002 /* pointer.usdz */,
 				DEF40A502880490F00A82002 /* AppDelegate.swift */,
 				DEF40A522880490F00A82002 /* ContentView.swift */,
+				DEF40A842887248900A82002 /* surfaceShader.metal */,
 				DEF40A542880490F00A82002 /* Experience.rcproject */,
 				DEF40A562880491300A82002 /* Assets.xcassets */,
+				DEF40A8C288AA65700A82002 /* randomEncouragement.swift */,
 				DEF40A582880491300A82002 /* Preview Content */,
 			);
 			path = pivot;
@@ -146,6 +157,9 @@
 			dependencies = (
 			);
 			name = pivot;
+			packageProductDependencies = (
+				DEF40A7D288196AF00A82002 /* FocusEntity */,
+			);
 			productName = pivot;
 			productReference = DEF40A4D2880490F00A82002 /* pivot.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +232,9 @@
 				Base,
 			);
 			mainGroup = DEF40A442880490F00A82002;
+			packageReferences = (
+				DEF40A7C288196AF00A82002 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = DEF40A4E2880490F00A82002 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF40A5A2880491300A82002 /* Preview Assets.xcassets in Resources */,
+				DEF40A892887524B00A82002 /* pointer.usdz in Resources */,
 				DEF40A572880491300A82002 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +281,8 @@
 				DEF40A532880490F00A82002 /* ContentView.swift in Sources */,
 				DEF40A512880490F00A82002 /* AppDelegate.swift in Sources */,
 				DEF40A552880490F00A82002 /* Experience.rcproject in Sources */,
+				DEF40A852887248900A82002 /* surfaceShader.metal in Sources */,
+				DEF40A8D288AA65700A82002 /* randomEncouragement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +444,7 @@
 				DEVELOPMENT_TEAM = CT44TU849Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augmented Reality";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -455,7 +475,7 @@
 				DEVELOPMENT_TEAM = CT44TU849Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augmented Reality";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -591,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEF40A7C288196AF00A82002 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEF40A7D288196AF00A82002 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF40A7C288196AF00A82002 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEF40A452880490F00A82002 /* Project object */;
 }
